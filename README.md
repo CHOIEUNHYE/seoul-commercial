@@ -7,7 +7,8 @@
 
 ## Server(back) - Client(front)
 
-flask - Vue.js3로 구현
+flask - Vue.js3로 구현 : [flask - vue 구현 참고 사이트](https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs/)
+
 
 ## Sever : Flask Setup
 
