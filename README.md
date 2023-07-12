@@ -12,7 +12,7 @@ flask - Vue.js3로 구현 : [flask - vue 구현 참고 사이트](https://testdr
 
 ## Sever : Flask Setup
 
-server 디렉토리로 이동
+server 디렉토리로 이동 (전체 프로젝트를 새로 생성하려 하는 과정 중이라면 server 폴더를 직접 만든 후 이동)
 ```sh
 cd server
 ```
