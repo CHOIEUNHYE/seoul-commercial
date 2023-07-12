@@ -42,7 +42,8 @@ def search():
 def chart_data(keyword):
     file_path = os.path.join(os.path.join('uploads', 'seoul_commercial_district.csv'))
     result = []
-    df = pd.read_csv(file_path,encoding="cp949")
+
+    df = pd.read_csv(file_path,encoding="utf-8")
     category_df = df.loc[df["상권업종대분류명"]==keyword]
     city_county_count = category_df.groupby(by='시군구명').count()['상호명']
     return city_county_count.to_dict()
@@ -50,8 +51,8 @@ def chart_data(keyword):
 
 @app.route('/chart', methods=['GET'])
 def chart():
-    # keyword = request.args.get('value')
-    keyword = '소매'
+    keyword = request.args.get('value')
+    # keyword = '소매' //test위한 키워드 고정
     if not keyword:
         return jsonify([])
     else:
