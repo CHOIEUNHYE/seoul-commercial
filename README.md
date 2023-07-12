@@ -11,7 +11,10 @@ flask - Vue.js3로 구현
 
 ## Sever : Flask Setup
 
-
+server 디렉토리로 이동
+```sh
+cd server
+```
 가상환경 생성
 ```sh
 python -m venv venv
