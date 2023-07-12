@@ -28,7 +28,7 @@
     </div>
   </template>
   
-  <script>
+<script>
   import axios from 'axios';
   import Chart from 'chart.js/auto';
   export default {
@@ -42,7 +42,9 @@
         소매:'소매',
         시설관리임대:'시설관리임대',
         수리개인:'수리개인',
-        부동산:'부동산'
+        부동산:'부동산',
+        myChart : null
+        
       };
       
     },
@@ -57,6 +59,7 @@
             const data = response.data;
             console.log(data);
             const transformedData = this.transformData(data);
+            
             this.drawChart(transformedData);
           })
           .catch(error => {
@@ -82,13 +85,15 @@
           values: values
         };
       },
+      
       drawChart(data) {
   
-        const canvas = document.getElementById('myChart');
-        const ctx = canvas.getContext('2d');
+        const ctx = document.getElementById('myChart').getContext('2d');
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height); // 캔버스 초기화
       
-  
-        new Chart(
+        if (this.myChart) {this.myChart.destroy();}   
+        
+        this.myChart = new Chart(
           ctx, {
           type: 'bar',
           data: {
@@ -102,7 +107,7 @@
             }]
           },
           options: {
-            reponsive:false,
+            reponsive:true,
             scales: {
               y: {
                 beginAtZero: true
