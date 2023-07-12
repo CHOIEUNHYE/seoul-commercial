@@ -52,3 +52,20 @@ vue 실행
 npm run dev
 ```
 
+## 프로젝트 이용하기
+이용하기 위해 server와 client 모두 실행해두는 것이 선행적으로 필요
+
+
+vue로 실행시켜 띄운 사이트에서 접근할 수 있는 엔드포인트는 /search , /chart 2가지
+
+### 기본 주소/search 
+서울 소상공인 상권 업종 정보 검색
+<img width="885" alt="image" src="https://github.com/CHOIEUNHYE/seoul-commercial/assets/68359686/a5591336-ca7e-40b1-9dbd-9195550d49b5">
+
+### 기본 주소/chart
+서울 소상공인 업종대분류별 자치구별 업종 수 현황 확인 
+<img width="772" alt="image" src="https://github.com/CHOIEUNHYE/seoul-commercial/assets/68359686/b86d8c01-1681-49cb-b4fc-c9c3dd787719">
+
+
+
+
