@@ -3,7 +3,7 @@
 ## Data
 사용 데이터 : 국가중점데이터 中 [상권정보 데이터](https://www.data.go.kr/data/15083033/fileData.do) csv 다운로드 -- 서울만 이용
 
-해당 데이터 명을 seoul-commercial-district.csv로 변경하여 server/uploads/seoul-commercial-district.csv에 위치시켜야함.
+해당 데이터 명을 seoul-commercial-district.csv로 변경 -> server/uploads/seoul-commercial-district.csv에 위치
 
 ## Server(back) - Client(front)
 
